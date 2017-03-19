@@ -32,6 +32,8 @@ function the_categories_description(  ) {
 		echo wp_get_attachment_image( $image_id, 'large' );
 		echo wp_oembed_get( get_term_meta( $cat_id, 'category-video-link', true ), array('width' => 400) );
 		echo $description;
+	} else {
+		echo $description;
 	}
 }
 add_filter('get_the_archive_description', 'the_categories_description' );
