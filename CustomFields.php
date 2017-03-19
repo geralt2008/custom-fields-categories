@@ -18,7 +18,7 @@ if ( ! class_exists( 'CustomFields' ) ) {
 			add_action( 'category_add_form_fields', array ( $this, 'add_category_image' ), 10, 2 );
 			add_action( 'created_category', array ( $this, 'save_category_image' ), 10, 2 );
 			add_action( 'category_add_form_fields', array ( $this, 'add_category_video_link' ), 10, 2 );
-			add_action( 'created_category', array ( $this, 'save_category_video_link' ), 10, 2 );
+			add_action( 'created_category', array ( $this, 'save_category_image' ), 10, 2 );
 			add_action( 'category_edit_form_fields', array ( $this, 'update_category_image' ), 10, 2 );
 			add_action( 'category_edit_form_fields', array ( $this, 'update_category_video_link' ), 10, 2 );
 			add_action( 'edited_category', array ( $this, 'updated_category_image' ), 10, 2 );
