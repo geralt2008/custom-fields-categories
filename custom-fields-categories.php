@@ -36,4 +36,4 @@ function the_categories_description(  ) {
 		echo $description;
 	}
 }
-add_filter(v'get_the_archive_description', 'the_categories_description' );
+add_filter( 'get_the_archive_description', 'the_categories_description' );
