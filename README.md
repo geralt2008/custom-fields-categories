@@ -1,2 +1,2 @@
 # custom-fields-categories
-Произвольные поля для таксономии категории
+Custom fields for catagories
